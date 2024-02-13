@@ -3,7 +3,7 @@
     <string name="app_name">"RideShareRide"</string>
 
     <!-- Do not change this for localization -->
-    <string name="google_android_map_api_key" translatable="false">AIzaSyCyjW6PLNDtNmhUsfiWygerQEI2Oc9el6w</string>
+    <string name="google_android_map_api_key" translatable="false">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
     <string name="mapboxkey">pk.eyJ1IjoiaWNhbnN0dWRpb3oiLCJhIjoiY2oyMXQ3dGRpMDAwdDJ3bXpmZHRkdTBtNyJ9.PxslIcrVRj_gVgiv-Y-jog</string>
 
     <string name="mobile_number">"मोबाइल नंबर"</string>

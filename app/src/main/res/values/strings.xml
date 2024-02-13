@@ -5,7 +5,7 @@
     <!--<string name="google_android_map_api_key">AIzaSyAGLm91ABu5qW9w9In5LMMuQXd_0ANvnxw</string>-->
     <!--    <string name="google_android_map_api_key">AIzaSyDLAHWiWMZsT6uoevKBejTU-gn6vxcczJQ</string>-->
     <!--    <string name="google_android_map_api_key" translatable="false">AIzaSyDJdca6mIsb_mOadvjvTMk9VHXtNFrO-58</string>-->
-    <string name="google_android_map_api_key" translatable="false">AIzaSyCyjW6PLNDtNmhUsfiWygerQEI2Oc9el6w</string>
+    <string name="google_android_map_api_key" translatable="false">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
     <string name="mapboxkey">pk.eyJ1IjoiaWNhbnN0dWRpb3oiLCJhIjoiY2oyMXQ3dGRpMDAwdDJ3bXpmZHRkdTBtNyJ9.PxslIcrVRj_gVgiv-Y-jog</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="email">Email Address</string>
@@ -159,7 +159,7 @@
     <string name="upload_identification_proof">Upload Identity Document</string>
     <string name="upload_profile_pic">Upload Profile Pic</string>
     <string name="ssn">SSN</string>
-    <string name="google_android_map_api_key_static">AIzaSyCyjW6PLNDtNmhUsfiWygerQEI2Oc9el6w</string>
+    <string name="google_android_map_api_key_static">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
     <string name="enter_tip_amount">Enter Tip Amount</string>
