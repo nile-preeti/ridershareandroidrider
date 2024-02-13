@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_rideshare">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fragment"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/Brown"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_back_aarow" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Ride details"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbVertical="@android:color/transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="@dimen/margin_m10"
+                            android:src="@drawable/ridesharelogo" />
+
+
+                        <LinearLayout
+                            android:id="@+id/totalAmountLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/totalAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="$26.90"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/ride_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/totalAmountLayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="November 8, 2023"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_rider_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="Thanks for riding, Demetrius"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_18sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_for_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_rider_name"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="For Category"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+                        <TextView
+                            android:id="@+id/tv_for_vehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_for_category"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="For Vehicle"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+                        <TextView
+                            android:id="@+id/tv_drivenBy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_for_vehicle"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="For Bosses, Driven by Boses."
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_child1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/form_outline_background"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_5"
+                            android:padding="@dimen/margin_5">
+
+                            <TextView
+                                android:id="@+id/totalTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_centerVertical="true"
+                                android:text="Total"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_22ssp"
+                                android:layout_alignParentStart="true"/>
+
+                            <TextView
+                                android:id="@+id/tv_total_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_12sdp"
+                                android:text="$26.90"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="@dimen/_22ssp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:foreground="@color/Brown"
+                            android:padding="@dimen/margin_5" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_5"
+                            android:padding="@dimen/margin_5">
+
+                            <TextView
+                                android:id="@+id/tv_cancellation_charge_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Trip Fare  "
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <TextView
+                                android:id="@+id/tv_trip_fare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:text="$16.56"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/montserrat_regular"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/tv_cancellation_charge_title" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                app:layout_constraintTop_toBottomOf="@+id/tv_trip_fare"
+                                android:foreground="@color/Brown"
+                                android:padding="@dimen/margin_5" />
+
+                            <TextView
+                                android:id="@+id/tv_total_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:text="Sub Total  "
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="@dimen/_10ssp"
+                                app:layout_constraintStart_toStartOf="@+id/tv_cancellation_charge_title"
+                                app:layout_constraintTop_toBottomOf="@+id/tv_trip_fare" />
+
+                            <TextView
+                                android:id="@+id/tv_sub_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="$16.56"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10ssp"
+                                app:layout_constraintStart_toStartOf="@+id/tv_trip_fare"
+                                app:layout_constraintTop_toTopOf="@+id/tv_total_title" />
+
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Booking Fees"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/liner"
+                                android:drawableRight="@drawable/baseline_question_mark_24"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="@dimen/_10ssp"
+                                app:layout_constraintStart_toStartOf="@+id/tv_total_title"
+                                app:layout_constraintTop_toBottomOf="@+id/tv_sub_total" />
+
+                            <TextView
+                                android:id="@+id/tv_booking_fee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="$109.76"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10ssp"
+                                app:layout_constraintStart_toStartOf="@+id/tv_sub_total"
+                                app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Cancellation fees"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/liner"
+                                android:textSize="@dimen/_8ssp"
+                                app:layout_constraintStart_toStartOf="@+id/textView13"
+                                app:layout_constraintTop_toBottomOf="@+id/tv_booking_fee" />
+
+                            <TextView
+                                android:id="@+id/tv_cancellation_fee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:text="$58.68"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_8ssp"
+                                app:layout_constraintStart_toStartOf="@+id/tv_booking_fee"
+                                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:maxWidth="@dimen/_120sdp"
+                                android:lines="2"
+                                android:text="Tax"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/liner"
+                                android:textSize="@dimen/_8ssp"
+                                app:layout_constraintStart_toStartOf="@+id/textView15"
+                                app:layout_constraintTop_toBottomOf="@+id/tv_cancellation_fee" />
+
+                            <TextView
+                                android:id="@+id/tv_tax_charge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scrollHorizontally="true"
+                                android:text="$0.58"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/liner"
+                                android:textSize="@dimen/_8ssp"
+                                app:layout_constraintStart_toStartOf="@+id/tv_cancellation_fee"
+                                app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0dp"
+                            android:padding="10dp">
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:src="@drawable/car_rider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

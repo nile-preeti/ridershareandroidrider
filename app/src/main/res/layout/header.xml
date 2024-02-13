@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainHeaderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/linear_pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/green_dot"
+                    android:layout_width="@dimen/margin_10"
+                    android:layout_height="@dimen/margin_10"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:background="@drawable/round_green"
+                    android:backgroundTint="@color/yellow_color"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_dehaze_black_24dp"
+                    android:tint="@color/Brown"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/pickup_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/current_location"
+                    android:layout_toRightOf="@+id/green_dot"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/pick_up_location"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/current_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_my_location_black_24dp"
+                    android:tint="@color/white"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription,RtlHardcoded,UseAppTint" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-18dp"
+                android:background="@color/yellow_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/yellow_color" />
+
+            <RelativeLayout
+                android:id="@+id/relative_drop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="@dimen/margin_10"
+                    android:layout_height="@dimen/margin_10"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:background="@drawable/rectangle_shape"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_dehaze_black_24dp"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/drop_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/clear"
+                    android:layout_toRightOf="@+id/line2"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:hint="@string/drop_up_location"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    tools:ignore="RtlHardcoded" />
+
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription=""
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_clear_black_24dp"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/timerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/cardView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/black"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/time_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/time_icon"
+            android:tint="@color/Brown"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/ride_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@id/time_image"
+            android:text="12:59"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_location"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/cardView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/black"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/center_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

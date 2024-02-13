@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">Rider RideshareRates</string>
+    <!--Do not change this for localization -->
+    <!--<string name="google_android_map_api_key">AIzaSyAlBu8MsC7jxJ68rpRR722Ojl_HQiWpnhQ</string>-->
+    <!--<string name="google_android_map_api_key">AIzaSyAGLm91ABu5qW9w9In5LMMuQXd_0ANvnxw</string>-->
+    <!--    <string name="google_android_map_api_key">AIzaSyDLAHWiWMZsT6uoevKBejTU-gn6vxcczJQ</string>-->
+    <!--    <string name="google_android_map_api_key" translatable="false">AIzaSyDJdca6mIsb_mOadvjvTMk9VHXtNFrO-58</string>-->
+    <string name="google_android_map_api_key" translatable="false">AIzaSyCyjW6PLNDtNmhUsfiWygerQEI2Oc9el6w</string>
+    <string name="mapboxkey">pk.eyJ1IjoiaWNhbnN0dWRpb3oiLCJhIjoiY2oyMXQ3dGRpMDAwdDJ3bXpmZHRkdTBtNyJ9.PxslIcrVRj_gVgiv-Y-jog</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="drop_up_location">Enter Drop Location</string>
+    <string name="pick_up_location">Enter Pickup Location</string>
+    <string name="update">Update</string>
+    <string name="direction_request">Direction Requesting........</string>
+    <string name="network">Network not available</string>
+    <string name="home">Home</string>
+    <string name="try_again">try again</string>
+    <string name="request_ride">Request Ride</string>
+    <string name="merchant_privacy">https://www.example.com/privacy</string>
+    <string name="merchant_user_agreement">https://www.example.com/legal</string>
+    <string name="merchant_name">Taxi App</string>
+    <string name="paypal_payment_currency">USD</string>
+    <string name="cash_on_hand">Request Cash On Hand to driver</string>
+    <string name="change_password">Change Password</string>
+    <string name="contact_admin">There is some problem. please contact your administrator.</string>
+    <string name="success_login">Welcome to </string>
+    <string name="profile">Profile</string>
+    <string name="taxi">TAXI</string>
+    <string name="ok">OK</string>
+    <string name="payment_update">Payment Updated</string>
+    <string name="ride_request_completed">Ride request completed</string>
+    <string name="ride_request_cancelled">Ride request cancelled</string>
+    <string name="accepted_request">Accepted Rides</string>
+    <string name="pending_request">Pending Rides</string>
+    <string name="cancelled_request">Cancelled Rides</string>
+    <string name="completed_request">Completed Rides</string>
+    <string name="couldnt_get_location">Couldn\'t get your location</string>
+    <string name="online">You are online</string>
+    <string name="error_occurred">Error Occurred</string>
+    <string name="fiels_is_required">Enter Name</string>
+    <string name="fname_is_required" translatable="false">Enter First Name</string>
+    <string name="lname_is_required" translatable="false">Enter Last Name</string>
+    <string name="fiels_is_required1" translatable="false">Enter Valid Password</string>
+    <string name="email_invalid">Enter Email</string>
+    <string name="mobile_invalid">Enter Mobile Number</string>
+    <string name="password_length">Minimum password length is 6 characters</string>
+    <string name="password_nomatch">Password didn\'t match</string>
+    <string name="passenger_info">Ride Details</string>
+    <string name="payment_hbeen_cancelled">Payment has been cancelled</string>
+    <string name="complete_ride">Complete Ride</string>
+    <string name="cancel_ride">Cancel Ride</string>
+    <string name="track_ride">Track Ride</string>
+
+    <string name="profile_updated">Profile Updated</string>
+    <string name="profile_uploaded">profile uploaded</string>
+    <string name="change">CHANGE</string>
+    <string name="old_pws_is_required">Old password is required</string>
+    <string name="confirm_pws_is_required">Confirm password is required</string>
+    <string name="relogin">Re-login and try again</string>
+    <string name="newpwd_required">New password is required</string>
+    <string name="password_updated">Password Updated</string>
+    <string name="invalid_location">Invalid location</string>
+    <string name="select_driver">Tap driver info</string>
+    <string name="invalid_fare">Invalid fare</string>
+    <string name="allow_permission">Allow Permission</string>
+    <string name="invalid_distance">invalid distance</string>
+    <string name="invalid_pickupaddress">Invalid pickup address</string>
+    <string name="invalid_dropaddress">Invalid drop address</string>
+    <string name="invalid_pickuplocation">Invalid pickup location</string>
+    <string name="invalid_droplocation">Invalid drop location</string>
+    <string name="ride_has_been_requested">Ride has been requested</string>
+    <string name="name">Name</string>
+    <string name="fname" translatable="false">First Name</string>
+    <string name="lname" translatable="false">Last Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="error_payment">Error while updating  payment</string>
+    <string name="server_not_respond">Server didn\'t response</string>
+    <string name="payment_method">Choose Payment method</string>
+    <string name="want_to_cancel_ride" translatable="false">If you cancel the confirmed ride after 3 min than $5 cancellation charge will be added in your next ride. Do you want to cancel the ride?</string>
+    <string name="want_to_cancel">Do you want to cancel this ride?</string>
+    <string name="want_to_accept">Do you want to complete your accepted ride?</string>
+    <string name="ride_request_cancellation">Cancel Ride</string>
+    <string name="FROM">FROM</string>
+    <string name="TIME">TIME</string>
+    <string name="DRIVERNAME">DRIVER NAME</string>
+    <string name="TO">TO</string>
+    <string name="basefare">"Base Fare       "</string>
+    <string name="pickup_location">"Pickup Location       "</string>
+    <string name="drop_location">"Drop Location       "</string>
+    <string name="namee">"Driver Name       "</string>
+    <string name="drivername">"Driver Number       "</string>
+    <string name="payment_status">"Payment Status       "</string>
+    <string name="mobile_numberr">"Mobile Number       "</string>
+    <string name="CUSTOMERNAME">CUSTOMER NAME</string>
+    <string name="nodata_found">No Data Found</string>
+    <string name="nocard_found">No Card Found</string>
+    <string name="vehicle_info">VEHICLE INFO</string>
+    <string name="ratekm">RATE / KM</string>
+    <string name="REQUEST_RIDE">Ride Now</string>
+    <string name="Login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_ac">Create an Account</string>
+    <string name="password_reset">Password Reset</string>
+    <string name="pwd_reset_instruction">Enter your registered email address ,We will send you an email to reset your password</string>
+    <string name="register_hint">Registered Email</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="reset_password">Reset password</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="new_pwd">New password</string>
+    <string name="old_pwd">Old password</string>
+    <string name="confirm_new_pwd">Confirm new password</string>
+    <string name="INVALID_DISTANCE">INVALID DISTANCE</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="taxigo">TexiGO</string>
+    <string name="date">DATE &amp; TIME</string>
+    <string name="fare">"Fare       "</string>
+    <string name="ride_request">Ride Request</string>
+    <string name="vehicle_name">"Vehicle Name       "</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="fare_calculating">Calculating Fare..........</string>
+    <string name="select_pickup_location">select pickup location</string>
+    <string name="select_drop_location">select drop location</string>
+    <string name="Track_Driver">Track Driver</string>
+    <string name="Track_Ride">Track Ride</string>
+    <string name="driver">Driver</string>
+    <string name="logout">Log out</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="choose_a_ride">Choose a ride</string>
+    <string name="call_driver">Call Driver</string>
+    <string name="edit_ride">Edit Ride</string>
+    <string name="done">Done</string>
+    <string name="ride_completed">Ride Completed!</string>
+    <string name="experience">How was your experience with</string>
+
+    <string name="map_id">52b28b84c97c8e88</string>
+    <string name="title_activity_map_tracking">Map</string>
+    <string name="notification_text">Tracking, tap to cancel</string>
+
+    <string name="transport_id" translatable="false">123</string>
+    <string name="firebase_path" translatable="false">locations</string>
+    <string name="firebase_email" translatable="false">user@gmail.com</string>
+    <string name="firebase_password" translatable="false">12345678</string>
+    <string-array name="payment_mode">
+        <item>Cash on hand [to driver]</item>
+        <item>pay via Paypal</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ride_status">Your ride has been completed successfully</string>
+    <string name="skip">No, Thanks</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="home_address">Home Address</string>
+    <string name="upload_identification_proof">Upload Identity Document</string>
+    <string name="upload_profile_pic">Upload Profile Pic</string>
+    <string name="ssn">SSN</string>
+    <string name="google_android_map_api_key_static">AIzaSyCyjW6PLNDtNmhUsfiWygerQEI2Oc9el6w</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="enter_tip_amount">Enter Tip Amount</string>
+    <string name="upload_identity_document">Upload Identity Document</string>
+    <string name="security_issue">Driver wants to drop off you before reaching destination. Do You want to complete this ride?</string>
+    <string name="update_identity_document">Update Identity Document</string>
+    <string name="write_short_description">Write Short Description</string>
+    <string name="submit">Submit</string>
+    <string name="getduma_call_center">(404)207-5620</string>
+    <string name="payment_confirmation">Payment is automatically debit for this ride.</string>
+    <string name="driver_arrived_msg">Driver has arrived at your location. Please meet with your driver.</string>
+    <string name="error_network_timeout">Network Timeout</string>
+
+    <string name="ride_info" translatable="false">ALL RIDER\'S MUST BE 18YRS OF AGE AND OLDER. NO MINORS ALLOWED TO RIDE WITHOUT PARENT OR GUARDIAN. NO REFUNDS AT PICKUP LOCATION.\n<font fgcolor="#EBA041">Cancellation Fee\'s $10-$150</font></string>
+    <string name="charge_info" translatable="false">CREDIT/DEBIT AUTHORIZATION CHARGE. YOUR DEBIT/CREDIT CARD WILL AUTOMATICALLY BE CHARGED AT END OF TRIP</string>
+    <string name="ride_charge" translatable="false">ALL RIDER\'S MUST BE 18YRS OF AGE AND OLDER. NO MINORS ALLOWED TO RIDE WITHOUT PARENT OR GUARDIAN. NO REFUNDS AT PICKUP LOCATION. CREDIT/DEBIT AUTHORIZATION CHARGE. YOUR DEBIT/CREDIT CARD WILL AUTOMATICALLY BE CHARGED AT END OF TRIP</string>
+    <string name="delete_account" translatable="false">Do you want to delete your account? When you delete your account. you won\'t be able to retrive the content and ride information on app.</string>
+    <string name="call_info" translatable="false">For your safety and privacy, please answer! All calls are kept PRIVATE.</string>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_5"
+    android:elevation="@dimen/margin_10"
+    android:padding="@dimen/margin_10"
+    app:cardBackgroundColor="@color/grey4"
+    app:cardCornerRadius="@dimen/margin_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/margin_5"
+            android:src="@drawable/img_logo" />
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_toEndOf="@id/user_img"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Amount"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_ride_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_amount"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_toEndOf="@id/user_img"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="details"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/txt_time"
+            android:layout_marginTop="@dimen/margin_5"
+            android:src="@drawable/time_icon"
+            app:tint="@color/pathLine" />
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="time"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_img"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5">
+
+            <ImageView
+                android:id="@+id/map_img"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/background_rideshare"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/margin_5"
+                android:paddingStart="@dimen/margin_5"
+                android:paddingEnd="@dimen/margin_5"
+                android:paddingBottom="@dimen/margin_5"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/ic_mappin_from" />
+
+                <TextView
+                    android:id="@+id/txt_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/img_from"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="From"
+                    android:padding="@dimen/margin_5"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/img_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_from"
+                    android:layout_marginTop="2dp"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/ic_mappin_to" />
+
+                <TextView
+                    android:id="@+id/txt_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/img_to"
+                    android:layout_below="@id/txt_from"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:padding="@dimen/margin_5"
+                    android:text="To"
+                    android:textColor="@color/Brown"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/icon_home"
+        android:title="Home">
+    </item>
+    <item
+        android:id="@+id/pending_requests"
+        android:icon="@drawable/icon_pending_rides"
+        android:title="Pending Rides"></item>
+    <item
+        android:id="@+id/accepted_requests"
+        android:icon="@drawable/icon_accepted_rides"
+        android:title="Accepted Rides"
+        ></item>
+    <item
+        android:id="@+id/completed_rides"
+        android:icon="@drawable/icon_complete_rides"
+        android:title="Completed Rides"></item>
+    <item
+        android:id="@+id/cancelled"
+        android:icon="@drawable/icon_canceled_rides"
+        android:title="Cancelled Rides"></item>
+    <item
+        android:id="@+id/spend_activity"
+        android:icon="@drawable/icon_spend"
+        android:title="Spend Details"></item>
+    <item
+        android:id="@+id/payment"
+        android:icon="@drawable/icon_card"
+        android:title="Payment Method"></item>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/icon_profile_circle"
+        android:title="Profile"></item>
+
+    <item
+        android:id="@+id/menu_pre_authorized_policy"
+        android:icon="@drawable/icon_privacy_policy"
+        android:title="PreAuthorized Policy"></item>
+
+    <item
+        android:id="@+id/menu_privacy_policy"
+        android:icon="@drawable/icon_privacy_policy"
+        android:title="Privacy Policy"></item>
+
+    <item
+        android:id="@+id/menu_about_us"
+        android:icon="@drawable/icon_privacy_policy"
+        android:title="About Us"></item>
+
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/icon_help"
+        android:visible="false"
+        android:title="Help"></item>
+    <item
+        android:id="@+id/delete_account"
+        android:icon="@drawable/icon_delet_account"
+        android:title="Delete Account"></item>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/icon_logout"
+        android:title="Log out"></item>
+
+    <item
+        android:id="@+id/help"
+        app:showAsAction="always"
+        android:title="" />
+
+</menu>

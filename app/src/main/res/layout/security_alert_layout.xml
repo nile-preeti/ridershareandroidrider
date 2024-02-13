@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/form_outline_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_15">
+
+
+    <ImageView
+        android:id="@+id/warn_icon"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_10"
+        android:src="@drawable/warning" />
+
+    <TextView
+        android:id="@+id/txt_security_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@id/warn_icon"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="@dimen/margin_5"
+        android:text="@string/security_issue"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/calling_layout_tech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_weight="45"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_10"
+        android:padding="@dimen/margin_10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_security_msg"
+        android:visibility="gone"
+        android:background="@drawable/calldriver_btn"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_icon"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calling_layout_tech"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_yes_tech"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="@drawable/accept_button"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel_tech"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/reject_button"
+            android:backgroundTint="@color/red"
+            android:bottomLeftRadius="10dp"
+            android:bottomRightRadius="10dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:text="No"
+            android:textColor="@color/white"
+            android:topLeftRadius="10dp"
+            android:topRightRadius="10dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
